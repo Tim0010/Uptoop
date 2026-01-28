@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Exclude sensitive data from cloud backup -->
+        <exclude domain="sharedpref" path="FlutterSecureStorage"/>
+        <exclude domain="sharedpref" path="flutter."/>
+        <exclude domain="database" path="*.db"/>
+    </cloud-backup>
+    <device-transfer>
+        <!-- Allow device transfer but exclude sensitive data -->
+        <exclude domain="sharedpref" path="FlutterSecureStorage"/>
+    </device-transfer>
+</data-extraction-rules>
+

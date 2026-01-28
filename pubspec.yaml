@@ -1,0 +1,71 @@
+name: uptop_careers
+description: "Uptop Careers - Refer & Earn Campus Ambassador Program"
+publish_to: 'none'
+version: 1.0.4+5  
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  country_picker: ^2.0.26
+  provider: ^6.1.5+1
+  dio: ^5.9.0
+  http: ^1.6.0
+  qr_flutter: ^4.1.0
+  carousel_slider: ^5.1.1
+  fl_chart: ^1.1.0
+  intl: ^0.20.2
+  shared_preferences: ^2.5.3
+  go_router: ^17.0.0
+  google_fonts: ^6.3.2
+  flutter_fortune_wheel: ^1.3.0
+  share_plus: ^7.0.0
+  file_picker: ^10.3.8
+  razorpay_flutter: ^1.4.0
+  supabase_flutter: ^2.12.0
+  flutter_dotenv: ^5.2.1
+  uuid: ^4.5.1
+  confetti: ^0.7.0
+  app_links: ^6.3.3
+  url_launcher: ^6.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - .env
+
+# Flutter Launcher Icons Configuration
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/uptop-logo.png"
+  min_sdk_android: 21
+
+  # Android adaptive icon (for Android 8.0+)
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/images/uptop-logo.png"
+
+  # Web
+  web:
+    generate: true
+    image_path: "assets/images/uptop-logo.png"
+    background_color: "#FFFFFF"
+    theme_color: "#2196F3"
+
+  # Windows
+  windows:
+    generate: true
+    image_path: "assets/images/uptop-logo.png"
+    icon_size: 48
+
